@@ -1,0 +1,125 @@
+.post-html-copyright {
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #e80e5a;
+    background-color: #ffffff;
+    border-radius: 1px;
+    box-shadow: 12px 12px 15px rgb(155, 172, 186);
+    transition: transform 0.3s ease-in-out;
+    border-image:  linear-gradient(45deg, transparent 30%, #e80e5a 30%, #e80e5a 70%, transparent 70%) 1;
+    margin: 0 auto;
+
+}
+.post-html-copyright div {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bolder;
+}
+.post-html-copyright span {
+    margin-left: 15px;
+}
+.post-html-copyright span, .info-box a {
+    font-weight: bold;
+    color: gray;
+}
+
+.post-html-copyright a {
+    color: #3f60de;
+}
+
+.vertical-line {
+  /*相对定位*/  
+  position: relative;
+}
+
+.vertical-line::before {
+    /* 创建一个空内容的伪元素 */
+    content: '';
+    
+    /* 使用绝对定位，相对于最近的已定位父元素 */
+    position: absolute;
+    
+    /* 从父元素的顶部开始定位 */
+    top: 0;
+    
+    /* 从父元素的左侧开始定位 */
+    left: 0;
+    
+    /* 水平方向平移使竖线居中 */
+    transform: translateX(-50%);
+    
+    /* 竖线的宽度 */
+    width: 5px;
+    
+    /* 竖线的高度占据整个父元素的高度 */
+    height: 100%;
+    
+    /* 竖线的背景颜色 */
+    background-color: #e80e5a;
+}
+
+.square-box {
+    /* 设置方块的宽度为20px */
+    width: 20px;
+
+    /* 设置方块的高度为20px */
+    height: 20px;
+
+    /* 设置方块的背景颜色为 #e80e5a */
+    background-color: #e80e5a;;
+
+    /* 设置文本颜色为白色 */
+    color: white!important;
+
+    /* 文本水平居中 */
+    text-align: center;
+
+    /* 设置行高为20px，使文本垂直居中 */
+    line-height: 20px;
+
+    /* 绝对定位 */
+    position: absolute;
+
+    /* 设置距离顶部距离为父元素高度的30% */
+    top: 30%;
+
+    /* 设置距离左侧距离为0 */
+    left: 0;
+
+    /* 将方块水平垂直居中 */
+    transform: translate(-50%, -50%);
+}
+
+/* 复制样式 */
+.copy-button {
+    position:absolute;
+    top: -6px;
+    right:405px;
+    transform: translate(50%, 50%);
+    background-color: rgba(255, 255, 255, 0.7); /* 使用rgba来设置背景颜色和透明度 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/*自定义通知*/
+.notification {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: rgb(102, 231, 130);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.notification.show {
+    opacity: 1;
+}
