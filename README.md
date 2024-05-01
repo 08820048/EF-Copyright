@@ -1,4 +1,3 @@
-# EF-Copyright
 # 手把手实现一个简约酷美美的版权声明模块
 
 ## 1. 导语
@@ -486,5 +485,6 @@ function showNotification(type, message) {
 
 项目地址:
 
-> - [github](https://github.com/08820048/EF-Copyright/tree/master)
+> - [CodePen](https://codepen.io/Tis-ox/pen/ZEZNxEd)
+> - [GitHub](https://github.com/08820048/EF-Copyright/tree/master)
 
