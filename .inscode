@@ -1,4 +1,4 @@
-run = "index.html"
+run = "copyright.html"
 language = "node"
 
 [env]
